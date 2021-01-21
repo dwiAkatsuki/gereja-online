@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "65410229248",
+    "firebase_url": "https://gereja-online.firebaseio.com",
+    "project_id": "gereja-online",
+    "storage_bucket": "gereja-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65410229248:android:7c6cf954e63477933764e5",
+        "android_client_info": {
+          "package_name": "com.example.gerejaonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65410229248-ur4okckc6uh8fmtlgmp7cuf34vikh2fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CkNtLQ8azV0y8L098Aek3oKJqIeLBmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65410229248-ur4okckc6uh8fmtlgmp7cuf34vikh2fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

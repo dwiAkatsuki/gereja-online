@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".warta.AddWartaActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbKrl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_home_wave"
+        app:title="WARTA GEREJA"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        android:id="@+id/cvTgl"
+        android:layout_below="@+id/tbKrl"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/jumlah"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Tanggal : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black" />
+
+            <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Tanggal"
+                android:id="@+id/add_tanggal_warta"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:editable="false"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvFile"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cvTgl"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="File : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="path file"
+                android:id="@+id/file_warta"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:editable="false"
+                android:textSize="20dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add_file_warta"
+                    android:layout_width="100dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="24dp"
+                    android:text="FILE"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:backgroundTint="@color/colorPrimaryDark"
+                    app:cornerRadius="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_warta"
+        android:layout_below="@+id/cvFile"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:text="ADD"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:cornerRadius="50dp" />
+    
+
+</RelativeLayout>
